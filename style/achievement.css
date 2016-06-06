@@ -1,0 +1,45 @@
+/*设置图片适应*/
+.content-1{
+  height: 535px;
+  line-height: 535px;
+  text-align: center;
+  background-image: url("../pic/achievement.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.shuju{display: inline-block;color: #FFF;vertical-align: middle; margin: 0 7%;}
+.shuju>div{width: 190px;height: 190px;border:5px solid #00FFFF; border-radius: 88px;line-height: 190px;}
+div.circle1{font-size: 72px;border-color: #FF5D60; }
+div.circle2{font-size: 48px;border-color: #00FFFF;}
+div.circle3{font-size: 30px;border-color: #558EFD;}
+.shuju>p{font-size: 24px;line-height: 2.5em;}
+
+
+
+/*主要块*/
+.content-2{background-color:#FFF}
+.content-2 *{text-align: center;line-height: 1.6em;}
+
+
+
+/*组介绍*/
+.content-2>p{
+	font-size: 48px;
+	color:#00cc99;
+}
+.group-title{font-size: 24px;color:#757575;}
+.a-line{display: inline-block;height: 1px;background-color: #969696;width:9.6%; margin: auto 16px 5px 16px;}
+
+
+
+       #tabs {font-size: 18px;color: #757575;}
+       #tabs ul{list-style:none;display: inline-block;height:35px;line-height:35px; border:1.5px black solid;border-radius: 2px;}
+       #tabs ul li{background:#fff;cursor:pointer;height:35px;line-height:35px;display:inline-block;width:200px;text-align: center;float:left;border-right:1px black solid;}
+       #tabs ul li:last-child{border-right:0px solid white;}
+	   #tabs ul li.on{color:#FFF;background-color: #00CC98;}
+       #tabs div>img{margin: 15px 1.786%; width:18.9%; }
+       .hide{display: none;}
+       #tabs div>img:hover{
+		transform:  scale(1.5);
+        }
+             
