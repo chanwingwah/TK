@@ -42,7 +42,7 @@
 .member-cardi>div>p{ font-size: 12px; white-space:nowrap; overflow: hidden;	text-align: left;margin-left: 10px;margin-bottom: 5px;
 } 
 
-.join{position: relative; width: 100%;min-height: 480px; background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center;	font-family:HYPED; 
+.join{position: relative; width: 100%;min-height: 480px; background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; 
 }
 .join>img{position: absolute;bottom : 0;right: 150px;}
 .join>div{margin-right: 370px;padding-top: 3em;}
