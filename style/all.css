@@ -1,0 +1,63 @@
+/* CSS Document */
+@font-face { 
+font-family: W3;
+src: url('../font/Hiragino Sans GB W3.otf');
+} 
+@font-face { 
+font-family: W6; 
+src: url('../font/Hiragino Sans GB W6.otf'); 
+} 
+@font-face { 
+font-family: HYPED; 
+src: url('../font/迷你简娃娃篆.ttf'); 
+} 
+
+
+
+*{margin: 0;padding: 0;}
+body{
+	font-family:W3,W6,HYPED; 
+	background:rgb(236,236,236);
+	width:1349px;
+	margin: 0 auto;
+}
+
+a{text-decoration: none; cursor: pointer;}
+ul,li,ol{list-style: none;}
+
+/*对布局进行处理、居中*/
+nav,section,footer{
+	margin:0 auto;
+	width:1349px;
+	position: relative;
+	}
+
+
+/*导航栏*/
+nav{
+	height: 50px;
+	line-height:50px;
+	background-color: #1C1D1A;
+	padding: 0 15%;
+	width: 70%;
+	overflow: hidden;
+	}
+	
+nav *{
+  color: #FFFFFF;
+}
+
+nav li{float: right;font-size: 14px;width: 11.7%;text-align: right;}
+nav>a>i.iconfont{font-size: 50px;float: left;margin-left: 5px;}
+
+
+
+/*页脚*/
+footer{
+	height: 68px;
+	line-height: 68px;
+	background-color: #3E3E3E;
+	color: #FFF;
+	text-align: center;
+	font-size: 10px
+}
