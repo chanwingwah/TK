@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="font/iconfont/iconfont.css">
+<link rel="stylesheet" type="text/css" href="style/all.css">
+<link rel="stylesheet" type="text/css" href="style/customer.css">
+<title>TK客户</title>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html"><i class="iconfont">&#xe607;</i></a>
+    <ul>
+      <li><a href="customer.html">我是客户</a></li>
+      <li><a href="team.html">团队</a></li>
+      <li><a href="achievement.html">成就</a></li>
+      <li><a href="index.html">首页</a></li>
+    </ul>
+  </nav><!-- 导航栏结束 -->
+
+<div class="bg">
+        <img src="pic/contact.png"> 
+        <p>如果你喜欢我们的作品<br/>或者有意愿跟我们工作室合作<br/>我们很乐意收到您的留言哦</p>
+  <div class="content">
+
+        
+        <form action=" " method="post"  autocomplete="on">
+        <p> 
+        <label for="username" > 你的名字 </label>
+        <input type="text" name="username" id="username"  required="required" placeholder="如何称呼你？？" 
+        oninvalid="this.setCustomValidity('这里还没填写呢.');" /> 
+        </p>
+
+        <p> 
+        <label for="usermail" > 邮箱地址 </label>
+        <input type="email" name="usermail" id="usermail" placeholder="我们不会向你发送垃圾邮件" required="required"  /> 
+        </p>
+
+        <p> 
+        <label for="message" class="iconic comment"> 留言  </label> 
+        <textarea placeholder="请畅所欲言吧，我们期待你的留言，我们会尽快回复你的"  required="required" 
+        oninvalid="this.setCustomValidity('说点什么呢.');"></textarea> 
+        </p>
+        
+        <input type="submit" value="发送" id="submit" />    
+
+
+
+      </form>   
+  </div> 
+</div><!-- bg结束 -->
+
+
+  <footer>
+    <p>Copyright © 2016 TKEngine.com.    AllRight Reserved. 拓科动力工作室版权所有</p>
+  </footer><!-- footer结束 -->
+</body>
+</html>
