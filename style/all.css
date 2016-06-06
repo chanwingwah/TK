@@ -1,16 +1,9 @@
 /* CSS Document */
-@font-face { 
-font-family: W3;
-src: url('../font/Hiragino Sans GB W3.otf');
-} 
-
-
-
 
 
 *{margin: 0;padding: 0;}
 body{
-	font-family:W3,W6,HYPED; 
+	font-family:'SansGBW33cc7085c46143';
 	background:rgb(236,236,236);
 	width:1349px;
 	margin: 0 auto;
