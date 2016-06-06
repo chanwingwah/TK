@@ -47,7 +47,8 @@
 .join>img{position: absolute;bottom : 0;right: 150px;}
 .join>div{margin-right: 370px;padding-top: 3em;}
 .join>div>span{font-size: 30px;line-height: 5.5em;}
-.join>div>div{	
+.join>div>a>div{
+	color: #636360;
 	display: inline-block;	
 	background-color: #7EB79F;
 	width: 9.167em;
