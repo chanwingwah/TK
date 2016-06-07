@@ -1,14 +1,13 @@
 
 /*主要块*/
-.bg{background-color: #FFFCD8;padding-bottom: 118px;}
+.bg{background-color: #FFFCD8;padding-bottom: 5.9em;}
 
-.teacher{min-height:535px; } 
-.teacher>img{float: left; margin-right: 70px;height: 100%;}
+.teacher>img{font-size: 35px; float: left; margin-right: 70px;height: 15.286em;}
 .teacher>div{font-size: 12px;text-align: left;color: #a9a179;line-height: 2.5em;padding-top: 180px;}
 .teacher>div>span{font-size: 36px;line-height:  2em}
 
 
-.member-list{clear: both;margin-bottom: 118px;padding-top: 85px;}
+.member-list{clear: both;margin-bottom: 5.9em;padding-top: 85px;}
 
 
 
@@ -42,21 +41,25 @@
 .member-cardi>div>p{ font-size: 12px; white-space:nowrap; overflow: hidden;	text-align: left;margin-left: 10px;margin-bottom: 5px;
 } 
 
-.join{position: relative; width: 100%;min-height: 480px; background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; 
+.join{position: relative; width: 100%; background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; padding-bottom: 4em;
 }
-.join>img{position: absolute;bottom : 0;right: 150px;}
+.join>img{position: absolute;bottom : 0;right: 150px;font-size: 25px;height: 19.2em;}
 .join>div{margin-right: 370px;padding-top: 3em;}
 .join>div>span{font-size: 30px;line-height: 5.5em;}
-.join>div>a>div{
-	color: #636360;
+.join>div>a>div{	
 	display: inline-block;	
 	background-color: #7EB79F;
 	width: 9.167em;
-	height: 2em;
+	height: 2.2em;
 	margin: 15px 0 90px;
 	border-radius: 5px;
 	-webkit-box-shadow:0px 3px 2px #70A189;
 	-moz-box-shadow:0px 3px 2px #70A189;
 	box-shadow:0px 3px 2px #70A189;
 	cursor: pointer;
+	color:  #636360;
+}
+.join>div>a>div:hover{
+	color: #FFF;
+
 }

@@ -1,45 +1,124 @@
 /*设置图片适应*/
 .content-1{
-  height: 535px;
-  line-height: 535px;
+  font-size: 20px;
+  height: 26.75em;
+  line-height: 26.75em;
   text-align: center;
   background-image: url("../pic/achievement.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
-.shuju{display: inline-block;color: #FFF;vertical-align: middle; margin: 0 7%;}
-.shuju>div{width: 190px;height: 190px;border:5px solid #00FFFF; border-radius: 88px;line-height: 190px;}
-div.circle1{font-size: 72px;border-color: #FF5D60; }
-div.circle2{font-size: 48px;border-color: #00FFFF;}
-div.circle3{font-size: 30px;border-color: #558EFD;}
+.shuju{display: inline-block;color: #FFF;vertical-align: middle; margin: 0 7%; font-family: "微软雅黑"}
+.shuju>div{font-size : 20px; width: 9.5em;height: 9.5em;border:0.25em solid #00FFFF; border-radius: 4.4em;line-height: 9.5em; }
+div.circle1 {border-color: #FF5D60; }
+div.circle2 {border-color: #00FFFF;}
+div.circle3 {border-color: #558EFD;}
+div.circle1>span {font-size: 72px; }
+div.circle2>span {font-size: 48px; }
+div.circle3>span {font-size: 30px; }
 .shuju>p{font-size: 24px;line-height: 2.5em;}
 
 
 
 /*主要块*/
-.content-2{background-color:#FFF}
+.content-2{background-color:#FFF;padding-bottom: 6em;}
 .content-2 *{text-align: center;line-height: 1.6em;}
 
 
 
 /*组介绍*/
 .content-2>p{
+  padding-top: 1.7em;
 	font-size: 48px;
 	color:#00cc99;
 }
 .group-title{font-size: 24px;color:#757575;}
-.a-line{display: inline-block;height: 1px;background-color: #969696;width:9.6%; margin: auto 16px 5px 16px;}
+.a-line{display: inline-block;height: 0.05em;background-color: #969696;width:15%; margin: auto 16px 5px 16px;}
 
 
 
-       #tabs {font-size: 18px;color: #757575;}
-       #tabs ul{list-style:none;display: inline-block;height:35px;line-height:35px; border:1.5px black solid;border-radius: 2px;}
-       #tabs ul li{background:#fff;cursor:pointer;height:35px;line-height:35px;display:inline-block;width:200px;text-align: center;float:left;border-right:1px black solid;}
-       #tabs ul li:last-child{border-right:0px solid white;}
-	   #tabs ul li.on{color:#FFF;background-color: #00CC98;}
-       #tabs div>img{margin: 15px 1.786%; width:18.9%; }
-       .hide{display: none;}
-       #tabs div>img:hover{
-		transform:  scale(1.5);
+#tabs {font-size: 18px;color: #757575;}
+#tabs ul{list-style:none;display: inline-block;height:1.944em;line-height:1.944em; border:1.5px black solid;border-radius: 2px;  margin: 3.111em auto;}
+#tabs ul li{background:#fff;cursor:pointer;height:1.944em;line-height:1.944em;display:inline-block;width:11.111em;text-align: center;float:left;border-right:1px black solid;}
+#tabs ul li:last-child{border-right:0px solid white;}
+#tabs ul li.on{color:#FFF;background-color: #00CC98;}
+#tabs div>img{margin: 15px 1.786%; width:18.9%; }
+.hide{display: none;}
+#tabs div>img:hover{
+transform:  scale(1.5);
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
         }
              
+/*特效/CSS3效果*/
+
+
+
+ @-moz-keyframes rotate{
+        0%{
+          -moz-transform:rotate(0deg);
+         }
+         10%{
+           -moz-transform:rotate(360deg);
+         }         
+         100%{
+           -moz-transform:rotate(360deg);
+         }
+      }
+      @-webkit-keyframes rotate{
+        0%{
+          -webkit-transform:rotate(0deg);
+         }
+         10%{
+           -webkit-transform:rotate(360deg);
+         }         
+         100%{
+           -webkit-transform:rotate(360deg);
+         }
+      }
+      @keyframes rotate{
+        0%{
+          transform:rotate(0deg);
+         }
+        10%{
+          transform:rotate(360deg);
+         }
+
+         100%{
+           transform:rotate(360deg);
+        }
+      }
+/*.shuju>div{
+            -moz-animationmove360rotate 20s infinite linear;
+            -webkit-animation:rotate 20s infinite linear;
+            animation:rotate 20s infinite linear;
+
+          }*/
+
+div.circle1{
+  -webkit-animation: rotate 15s ease-in-out 1s infinite ;
+  -o-animation: rotate 15s ease-in-out 1s infinite ;
+  animation: rotate 15s ease-in-out 1s infinite ;
+}
+div.circle2{
+  -webkit-animation: rotate 15s ease-in-out 6s infinite ;
+  -o-animation: rotate 15s ease-in-out 6s infinite ;
+  animation: rotate 15s ease-in-out 6s infinite ;
+}
+div.circle3{
+  -webkit-animation: rotate 15s ease-in-out 11s infinite ;
+  -o-animation: rotate 15s ease-in-out 11s infinite ;
+  animation: rotate 15s ease-in-out 11s infinite ;
+}
+
+
+.shuju>div:hover>span { 
+/*  transition: transform 2s linear;
+*/  -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+    transform:  scale(1.5);
+    color: red;
+
+}

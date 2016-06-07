@@ -1,47 +1,43 @@
 
-.bg{background: #E7EAEC;text-align: center; padding-bottom: 50px;color: #41484e}
-.bg>img{margin-top:95px;margin-bottom: 40px; }
-.bg *{line-height: 1.6em; }
-.content {width:280px;text-align: center; display: inline-block;margin-top: 35px;}
+.bg{background: #E7EAEC;text-align: center; padding-bottom: 2.5em;color: #41484e}
+.bg>img{margin-top:4.5em;margin-bottom: 2.5em; width: 73.57%;}
+.bg *{line-height: 2em; }
+.bg>p{font-size: 12px;}
+.content {font-size:12px;width:23.334em;text-align: center; display: inline-block;margin-top: 1em;}
 form>p{text-align: left;} 
 
 
-
-
-label{display: block;margin-top: 25px;}
+label{display: block;margin-top: 1.786em;font-size: 14px;}
 input,textarea{
 
-  width: 260px;
+  width: 92.8%;
   background:#41494E; 
   border: 0px;
   border-radius:4px;
   border-color:#41484e; 
   color:#FFF;
-  padding: 5px 10px;
+  padding: 0.416em 3.6%;
   outline:medium;
-
-
 }
 
 
 
 input{
-  height:20px;    
+  height:1.667em;    
 
 }
 textarea{
-  min-height: 140px;
+  min-height: 10em;
   resize:vertical
 
 }
 
 #submit{
-  width: 52px;
-  height: 52px;
+  width: 4.334em;
+  height: 4.334em;
   background: #F56A76;
-  border-radius: 26px;
-  margin-top: -26px;
-  font-size: 14px;
+  border-radius: 2.167em;
+  margin-top: -2.167em;
   color: #41484e;
   font-weight: bold;
   cursor: pointer;
@@ -49,6 +45,7 @@ textarea{
 
 #submit:hover{
   color:#FFF;
+  background-color:#FF5A76;
 
 }
 
@@ -62,4 +59,19 @@ background:#41484e;
 -webkit-box-shadow:3px 3px 7px #000 inset;
    -moz-box-shadow:3px 3px 7px #000 inset;
         box-shadow:3px 3px 7px #000 inset;
+}
+@keyframes colors {
+  0%{  background-color: #E7EAEC }
+  20%{  background-color: #FEB449 }
+  40%{  background-color: #C3BED4 }
+  60%{  background-color: #FFFBFF }
+  80%{  background-color: #E7EAEC }
+  100%{  background-color: #BDB769 }
+}
+
+
+.bg{
+  -webkit-animation: colors 90s linear 1s infinite alternate ;
+  -o-animation: colors 90s linear 1s infinite alternate ;
+  animation: colors 90s linear 1s infinite alternate ;
 }
