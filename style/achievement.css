@@ -41,9 +41,17 @@ div.circle3>span {font-size: 30px; }
 #tabs ul{list-style:none;display: inline-block;height:1.944em;line-height:1.944em; border:1.5px black solid;border-radius: 2px;  margin: 3.111em auto;}
 #tabs ul li{background:#fff;cursor:pointer;height:1.944em;line-height:1.944em;display:inline-block;width:11.111em;text-align: center;float:left;border-right:1px black solid;}
 #tabs ul li:last-child{border-right:0px solid white;}
-#tabs ul li.on{color:#FFF;background-color: #00CC98;}
+#tabs ul li.on{color:#FFF;background-color: #00CC98;
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
 #tabs div>img{margin: 15px 1.786%; width:18.9%; }
-.hide{display: none;}
+.hide{display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
 #tabs div>img:hover{
 transform:  scale(1.5);
   -webkit-transition: all 0.5s ease-in-out;
@@ -51,8 +59,9 @@ transform:  scale(1.5);
     transition: all 0.5s ease-in-out;
         }
              
-/*特效/CSS3效果*/
 
+
+/*特效/CSS3效果*/
 
 
  @-moz-keyframes rotate{
@@ -122,3 +131,4 @@ div.circle3{
     color: red;
 
 }
+

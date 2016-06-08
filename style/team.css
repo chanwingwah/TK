@@ -43,13 +43,31 @@
 .btn>i{font-size: 40px;	color: #FFF;
 }
 
-.display:hover>*{	display: inline-block;
+#display:hover>*{	display: inline-block;
 }
 
 
-.member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;}
+.member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;height: 17.5em;vertical-align: bottom;}
 
 .member-cardi{display:inline-block;width: 10em; color:#757575; }
+
+.member-cardi:hover{
+ transform:  translateY(25px) scale(1.2);
+
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+        }
+.member-cardi:hover>img{
+ -moz-transform: scaleX(-1);
+ -webkit-transform: scaleX(-1);
+ transform: scaleX(-1);
+ filter: fliph; /*IE*/
+  -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+  }
+
 .member-cardi>img {width: 82.5% ; }
 .member-cardi>div{
 	display: inline-block;

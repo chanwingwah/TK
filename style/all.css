@@ -60,3 +60,78 @@ nav>a>i.iconfont:hover{
 }
 
 
+/*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
+@keyframes lefteaseinAnimate{
+    0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-o-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-ms-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+@-moz-keyframes lefteaseinAnimate{
+    0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}    
+}
+
+/*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
+@keyframes righteaseinAnimate{
+    0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
+}
+@-webkit-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-o-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-ms-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+@-moz-keyframes righteaseinAnimate{
+    0%{ -webkit-transform: translateX(2000px); opacity: 0;}
+    100%{ -webkit-transform: translateX(0px); opacity: 1;}
+}
+
+
+.font46,.teacher>div{
+    animation: lefteaseinAnimate 1.5s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1.5s，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: lefteaseinAnimate 1.5s ease 1;
+    -ms-animation: lefteaseinAnimate 1.5s ease 1;
+    -o-animation: lefteaseinAnimate 1.5s ease 1;
+    -moz-animation: lefteaseinAnimate 1.5s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
+
+
+.font23,.teacher>img{
+    animation: righteaseinAnimate 1.5s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1.5s，进入的速度曲线为ease，只播放一次*/
+    -webkit-animation: righteaseinAnimate 1.5s ease 1;
+    -moz-animation: righteaseinAnimate 1.5s ease 1;
+    -ms-animation: righteaseinAnimate 1.5s ease 1;
+    -o-animation: righteaseinAnimate 1.5s ease 1;
+    
+    /*规定动画的最后状态为结束状态*/
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode: forwards;  
+      -o-animation-fill-mode: forwards; 
+      -ms-animation-fill-mode: forwards;   
+      -moz-animation-fill-mode: forwards; 
+}
