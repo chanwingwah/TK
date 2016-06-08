@@ -7,9 +7,12 @@ function $(id){
 window.onload=tab;
 
 function tab(){
+
+
   // 初始化引索与定时器
   var index=0;
   var timer=null;
+  var timer2=null;
 
   // 获取所要切换的内容
   var tabs=$('tabs');
@@ -19,13 +22,21 @@ function tab(){
   // 遍历绑定事件
   for(var i=0;i<lis.length;i++){
     lis[i].id=i;
+
+    lis[i].onmouseout=function(){  
+      timer=setInterval(autoPlay,3500); 
+      clearTimeout(timer2);
+   
+    }
     lis[i].onmouseover=function(){
       clearInterval(timer);
-      changeOption(this.id);
+      clearTimeout(timer2);
+      var that=this; // 用that这个变量来引用当前滑过的li
+      timer2=setTimeout(function(){ changeOption(that.id)},350);
     }
-    lis[i].onmouseout=function(){  
-      timer=setInterval(autoPlay,3500);    
-    }
+
+
+
 
 
 
