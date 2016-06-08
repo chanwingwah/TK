@@ -50,21 +50,26 @@ footer{
 
 
 /*特效/CSS3效果*/
+
+
+
 nav>a>i.iconfont:hover{	
 	color: red;
 	transform:rotate(-720deg);
 /*	transition: transform 2s linear;
-*/	-webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+*/	-webkit-transition: all 1s 0.3s ease-in-out;
+    -moz-transition: all 1s 0.3s ease-in-out;
+    transition: all 1s 0.3s ease-in-out;
 }
 
 
 /*定义一个名字为lefteaseinAnimate动画，实现从页面的左边淡入页面效果*/
 @keyframes lefteaseinAnimate{
     0%{ transform: translateX(-2000px); opacity: 0;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    70%{ transform: translateX(150px); opacity: 1;}   /*在0%时设置文字在想X轴-2000px位移处（左边），透明度为0，也就是看不见文字*/
+    
     100%{ transform: translateX(0px); opacity: 1;}         /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
-}
+}/*
 @-webkit-keyframes lefteaseinAnimate{
     0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
     100%{ -webkit-transform: translateX(0px); opacity: 1;}    
@@ -81,12 +86,14 @@ nav>a>i.iconfont:hover{
     0%{ -webkit-transform: translateX(-2000px); opacity: 0;}
     100%{ -webkit-transform: translateX(0px); opacity: 1;}    
 }
-
+*/
 /*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
 @keyframes righteaseinAnimate{
     0%{ transform: translateX(2000px); opacity: 0;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+    70%{ transform: translateX(-100px); opacity: 1;}   /*在0%时设置文字在想X轴2000px位移处（右边），透明度为0，也就是看不见文字*/
+
     100%{ transform: translateX(0px); opacity: 1;}      /*在100%时设置文字在想X轴0px位移处，也就是原始布局的位置，透明度为1，也就是文字可以看见了*/
-}
+}/*
 @-webkit-keyframes righteaseinAnimate{
     0%{ -webkit-transform: translateX(2000px); opacity: 0;}
     100%{ -webkit-transform: translateX(0px); opacity: 1;}
@@ -103,9 +110,9 @@ nav>a>i.iconfont:hover{
     0%{ -webkit-transform: translateX(2000px); opacity: 0;}
     100%{ -webkit-transform: translateX(0px); opacity: 1;}
 }
+*/
 
-
-.font46,.teacher>div{
+.teacher>div{
     animation: lefteaseinAnimate 1.5s ease 1;    /*调用已定义好的动画lefteaseinAnimate，全程运行时间1.5s，进入的速度曲线为ease，只播放一次*/
     -webkit-animation: lefteaseinAnimate 1.5s ease 1;
     -ms-animation: lefteaseinAnimate 1.5s ease 1;
@@ -121,12 +128,12 @@ nav>a>i.iconfont:hover{
 }
 
 
-.font23,.teacher>img{
+.teacher>img{
     animation: righteaseinAnimate 1.5s ease 1;    /*调用已定义好的动画righteaseinAnimate，全程运行时间1.5s，进入的速度曲线为ease，只播放一次*/
-    -webkit-animation: righteaseinAnimate 1.5s ease 1;
-    -moz-animation: righteaseinAnimate 1.5s ease 1;
-    -ms-animation: righteaseinAnimate 1.5s ease 1;
-    -o-animation: righteaseinAnimate 1.5s ease 1;
+    -webkit-animation: right ease-in Animate 1.5s ease 1;
+    -moz-animation: right ease-in Animate 1.5s ease 1;
+    -ms-animation: right ease-in Animate 1.5s ease 1;
+    -o-animation: right ease-in Animate 1.5s ease 1;
     
     /*规定动画的最后状态为结束状态*/
     animation-fill-mode:forwards;

@@ -71,7 +71,21 @@ background:#41484e;
 
 
 .bg{
-  -webkit-animation: colors 90s linear 1s infinite alternate ;
-  -o-animation: colors 90s linear 1s infinite alternate ;
-  animation: colors 90s linear 1s infinite alternate ;
+  -webkit-animation: colors 100s linear 2s  alternate 10;
+  -o-animation: colors 100s linear 2s  alternate 10;
+  animation: colors 100s linear 2s  alternate 10;
+}
+
+
+@keyframes strap1 {
+  0%{  transform: scaleX(0.5); }
+  40%{  transform: scaleX(1.5); }
+  100%{  transform: scaleX(1); }
+}
+
+
+.bg>img{
+  -webkit-animation: strap1 2s linear 0s 1;
+  -o-animation: strap1 2s linear 0s 1;
+  animation: strap1 2s linear 0s 1;
 }

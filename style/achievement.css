@@ -47,11 +47,11 @@ div.circle3>span {font-size: 30px; }
           transition: all 0.5s ease-in-out;
 }
 #tabs div>img{margin: 15px 1.786%; width:18.9%; }
+
 .hide{display: none;
-  -webkit-transition: all 0.5s ease-in-out;
-     -moz-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
+
 }
+
 #tabs div>img:hover{
 transform:  scale(1.5);
   -webkit-transition: all 0.5s ease-in-out;
@@ -129,6 +129,24 @@ div.circle3{
             transition: all 1s ease-in-out;
     transform:  scale(1.5);
     color: red;
+
+}
+
+      @keyframes chuxian{
+        0%{
+        opacity: 0;
+/*        transform: scaleX(-1);
+*/        }
+         100%{
+        opacity: 1;
+/*        transform: scale(1);
+*/
+        }
+      }
+
+
+.chuxian{
+  animation: chuxian 0.7s ease-in-out 0s 1 ;
 
 }
 

@@ -46,7 +46,6 @@
 #display:hover>*{	display: inline-block;
 }
 
-
 .member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;height: 17.5em;vertical-align: bottom;}
 
 .member-cardi{display:inline-block;width: 10em; color:#757575; }
@@ -100,4 +99,57 @@
 .join>div>a>div:hover{
 	color: #FFF;
 
+}
+
+.music>i{
+	position: absolute;
+	right: 7em;
+	z-index: 2;
+	color: red;
+	font-size: 2em;
+	bottom: 2em;
+
+}
+.music>i:hover{
+	  animation-name: none;
+
+}
+
+i.music1{
+
+  /* border-radius: 25px; */
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: -3em;
+  animation-name: circle;
+}
+i.music2{
+
+  /* border-radius: 25px; */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: -5em;
+  animation-name: circle;
+}
+
+i.music3{
+
+  /* border-radius: 25px; */
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 4em;
+  animation-name: circle;
+}
+
+
+@keyframes circle {
+  0% {
+   transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
