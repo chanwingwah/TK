@@ -7,7 +7,7 @@
 .teacher>div>span{font-size: 36px;line-height:  2em}
 
 
-.member-list{clear: both;margin-bottom: 5em;padding-top: 4.25em;}
+.member-list{clear: both;padding-top: 4.25em;}
 
 
 
@@ -46,7 +46,7 @@
 #display:hover>*{	display: inline-block;
 }
 
-.member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;height: 17.5em;vertical-align: bottom;}
+.member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;padding-bottom: 5em;}
 
 .member-cardi{display:inline-block;width: 10em; color:#757575; }
 
