@@ -67,7 +67,7 @@ function tab(){
     }
     // 切换
     lis[curIndex].className='on';
-    divs[curIndex].className='';
+    divs[curIndex].className='chuxian';
     index=curIndex;
   }
 }
