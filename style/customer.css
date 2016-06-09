@@ -1,5 +1,5 @@
-
-.bg{background: #E7EAEC;text-align: center; padding-bottom: 2.5em;color: #41484e}
+html,body{height: 100%; margin: 0;padding: 0;}
+.bg{background: #E7EAEC;text-align: center; padding-bottom: 2.5em;color: #41484e; height: 95%;min-height: 38em;}
 .bg>img{margin-top:4.5em;margin-bottom: 2.5em; width: 73.57%;}
 .bg *{line-height: 2em; }
 .bg>p{font-size: 12px;}
@@ -9,7 +9,7 @@ form>p{text-align: left;}
 
 label{display: block;margin-top: 1.786em;font-size: 14px;}
 input,textarea{
-
+  font-size:12px;
   width: 92.8%;
   background:#41494E; 
   border: 0px;
@@ -28,7 +28,12 @@ input{
 }
 textarea{
   min-height: 10em;
-  resize:vertical
+  resize:vertical;
+  overflow-y: auto;
+  scrollbar-face-color:#000;
+  scrollbar-track-color:#41494E;
+    border-radius:8px;
+
 
 }
 
@@ -88,4 +93,11 @@ background:#41484e;
   -webkit-animation: strap1 2s linear 0s 1;
   -o-animation: strap1 2s linear 0s 1;
   animation: strap1 2s linear 0s 1;
+}
+
+
+
+#submit:hover{
+  box-shadow:  -2px 0px 20px rgba(255,0,0,1);
+
 }

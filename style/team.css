@@ -1,6 +1,10 @@
 
+
+
+.bg{background-color: #FFFCD8;padding-bottom: 5.9em;width: 100%}
+.join_bg{width: 100%;background-color:#E1DFB4; }
+
 /*主要块*/
-.bg{background-color: #FFFCD8;padding-bottom: 5.9em;}
 
 .teacher>img{font-size: 35px; float: left; margin-right: 70px;height: 15.286em;}
 .teacher>div{font-size: 12px;text-align: left;color: #a9a179;line-height: 2.5em;padding-top: 180px;}
@@ -47,6 +51,11 @@
 }
 
 .member-card{ display:inline-block; width: 50em; white-space: nowrap;  margin-top: 2.5em;overflow: hidden;padding-bottom: 5em;}
+#member-card{ 
+	position: relative;
+	top: 0;
+	left: 0em;
+}
 
 .member-cardi{display:inline-block;width: 10em; color:#757575; }
 
@@ -79,7 +88,7 @@
 .member-cardi>div>span{font-size: 24px;margin-left: 10px;}
 .member-cardi>div>p{ font-size: 12px; white-space:nowrap; text-align: left;margin-left: 10px;margin-bottom: 5px;} 
 
-.join{position: relative; width: 100%; background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; padding-bottom: 4em;}
+.join{ position: relative;  background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; padding-bottom: 4em;font-size: 20px;  width:67.45em;}
 .join>img{position: absolute;bottom : 0;right: 150px;font-size: 25px;height: 19.2em;}
 .join>div{margin-right: 370px;padding-top: 3em;}
 .join>div>span{font-size: 30px;line-height: 5.5em;}
@@ -109,15 +118,22 @@
 	font-size: 2em;
 	bottom: 2em;
 
+
 }
 .music>i:hover{
 	  animation-name: none;
 
 }
 
+
+
+
+
+
+/*运动的音符*/
+
 i.music1{
 
-  /* border-radius: 25px; */
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -126,7 +142,6 @@ i.music1{
 }
 i.music2{
 
-  /* border-radius: 25px; */
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -136,14 +151,12 @@ i.music2{
 
 i.music3{
 
-  /* border-radius: 25px; */
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   transform-origin: 4em;
   animation-name: circle;
 }
-
 
 @keyframes circle {
   0% {
@@ -152,4 +165,22 @@ i.music3{
   100% {
     transform: rotate(-360deg);
   }
+}
+
+
+@keyframes neon6 {
+  from {
+    text-shadow:  0 0 40px #ff00de,
+
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 65px #fff,
+
+  }
+}
+
+.join a{
+  animation: neon6 3s ease-in-out 10 alternate; 
 }

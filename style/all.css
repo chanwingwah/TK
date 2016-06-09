@@ -6,17 +6,26 @@ body{
 	font-size: 20px;
 	font-family:'SansGBW33cc7085c46143';
 	background:rgb(236,236,236);
-	width:67.45em;
 	margin: 0 auto;
+    min-width: 67.45em;
 }
 
 a{text-decoration: none; cursor: pointer;color:#FFF;}
 ul,li,ol{list-style: none;}
 
+/*背景处理*/
+.nav_bg{  background-color: #1C1D1A;width:100%;  }
+
+
+
+
 /*对布局进行处理、居中*/
 nav,section,footer{
 	margin:0 auto;
 	position: relative;
+    width:67.45em;
+    position: relative;
+
 	}
 
 
@@ -25,8 +34,8 @@ nav{
 	height: 2.5em;
 	line-height:2.5em;
 	background-color: #1C1D1A;
-	padding: 0 15%;
-	width: 70%;
+	padding: 0 10.1175em;
+	width: 47.215em;
 	}
 	
 nav *{
@@ -45,8 +54,13 @@ footer{
 	background-color: #3E3E3E;
 	color: #FFF;
 	text-align: center;
-	font-size: 10px
+	font-size: 10px;
+    width: 100%;
 }
+
+
+
+
 
 
 /*特效/CSS3效果*/

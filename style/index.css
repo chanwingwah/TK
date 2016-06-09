@@ -1,9 +1,22 @@
 
+/*背景处理*/
+.content-1_bg{
+background-color: #131313;
+background-image: url(../pic/TKmain2.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.content-2_bg{
+background: #FFF;
+width: 100%;
+}
+
+
 
 /*设置图片适应*/
 .content-1>img{width: 100%;}
 .content-1{
-	background:no-repeat url("../pic/TKmain2.jpg") rgba(0,0,0,1);
+	background:no-repeat url("../pic/TKmain2.jpg") #131313;
 	background-size: 100% 100%; 
 
 }
@@ -26,6 +39,32 @@
 	line-height: 2.5em;
 	text-align: left;
 }
+.achievement>div>ul>li{padding-left: 10px;}
+
+.achievement>div>ul>li:hover{
+background-color: #FFC0CB;
+color:#FFF;
+font-weight: bold;
+box-shadow:inset 0px 2px 2.5em rgba(255,0,0,0.3),0px 0px 1px #000;
+
+}
+
+.achievement>div>ul>li:hover>i{
+    color:#000;
+ /*   text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff,
+                 0 0 15px #fff,
+                 0 0 20px #000;*/
+
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.achievement>div:hover>p{
+  color:#000;
+}
+
+
 i.color1{ color: #69c5e5; }
 i.color2{ color: #caa06e; }
 i.color3{ color: #bdbfc6; }
@@ -139,4 +178,41 @@ i.color4{ color: #3e466a; }
 
   animation: big 2s  ease-in-out 0.1s 1;
 
+}
+
+
+p.font46{
+  animation: neon1 1.5s 1s ease-in-out 3 alternate; 
+}
+p.font23{
+  animation: neon2 1.5s ease-in-out 3 alternate; 
+}
+
+p.font46 :hover{
+  animation: neon1 1.5s 1s ease-in-out 3 alternate; 
+}
+p.font23 :hover{
+  animati on: neon2 1.5s ease-in-out 3 alternate; 
+}
+
+/*glow for webkit*/
+@-webkit-keyframes neon1 {
+  from {
+  	color:black;
+
+  }
+  to {
+  	color:#858484;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+  	color:black;
+
+  }
+  to {  
+  	color:#bbbbbb;
+
+  }
 }
