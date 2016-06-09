@@ -17,7 +17,7 @@ function tab(){
   // 获取所要切换的内容
   var tabs=$('tabs');
   var lis=$('tabsul').getElementsByTagName('li');
-  var divs=$('tabs').getElementsByTagName('div');
+  var divs=$('tabss').getElementsByTagName('div');
 
   // 遍历绑定事件
   for(var i=0;i<lis.length;i++){
@@ -34,10 +34,6 @@ function tab(){
       var that=this; // 用that这个变量来引用当前滑过的li
       timer2=setTimeout(function(){ changeOption(that.id)},350);
     }
-
-
-
-
 
 
 // 在浏览图片是就不要跳了
@@ -74,11 +70,22 @@ function tab(){
   function changeOption(curIndex){
     for(var j=0;j<lis.length;j++){
        lis[j].className='';
-       divs[j].className='hide';
+   if (index>curIndex) {
+       divs[j].className='hider';
+    }else {
+       divs[j].className='hidel';
+      
+    }
+
     }
     // 切换
     lis[curIndex].className='on';
-    divs[curIndex].className='chuxian';
+    if (index>curIndex) {
+      divs[curIndex].className='chuxianl';
+    }else {
+      divs[curIndex].className='chuxianr';
+      
+    }
     index=curIndex;
   }
 }
