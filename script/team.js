@@ -33,14 +33,22 @@ b=-1;
 
 var nav=document.getElementsByClassName("nav_bg")[0];
 var section=document.getElementsByTagName("section");
-var movespeed=100;
+var movespeed=30;
 var  time3;
 
-
  window.onload=function () {
-	window.onmousewheel = document.onmousewheel =  scrollFunc;  
+  // ie上不用这个效果
+    var s= window.navigator.appVersion;
+      if (s==="5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; rv:11.0) like Gecko") {
+      }else {
+//添加鼠标滚轮事件
+        window.onmousewheel = document.onmousewheel =  scrollFunc;  
+    }
+//成员轮播  结合css3样式实现平滑过渡
  	time=setInterval("scroll()",intervalTime);
 
+
+//添加鼠标事件
 	bnr.onclick=function () {
 		add=1;
 		resetTag=15;
@@ -63,6 +71,8 @@ var  time3;
 		 
 		 }, intervalTime);
 	}
+
+
 	bnl.onclick=function () {
 		add=-1;
 		ivalue=15;
@@ -101,6 +111,8 @@ kk[i].onmouseout=function () {
 
 }
 
+
+// scroll scrollmove fuyuan是轮播的调用函数
 function scroll () {
 		scrollmove();
 		if(i==resetTag){fuyuan();}
@@ -129,7 +141,7 @@ function fuyuan() {
 
 
 
-
+// scrollFunc鼠标滚轮事件的定义，IE兼容还没实现
    var scrollFunc = function (e) {
         e = e || window.event;
         if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件 
@@ -175,19 +187,18 @@ function fuyuan() {
                       time3=setInterval(function () {
                                 var a=window.scrollY;
                                 GoGo(movespeed);
-                                if ( (window.scrollY>=section[2].offsetTop-120) ||(a==window.scrollY)) {
+                                if ( (window.scrollY>=section[2].offsetTop-80) ||(a==window.scrollY)) {
                                     clearInterval(time3);
                                     window.onmousewheel = document.onmousewheel = scrollFunc;  
                                     i++;
                                 }
                         }, 1);
-
                     }
               }
         }
-
     }
 
+// 滚动函数
 function GoGo (yy) {
       window.scrollBy(0, yy);//yy即为滚动速度
 }

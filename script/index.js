@@ -1,13 +1,16 @@
-
+// 滚轮事件
 var nav=document.getElementsByClassName("nav_bg")[0];
 var content2=document.getElementsByClassName("content-2_bg")[0];
 var movespeed=50;
 var  time3;
 
-
 window.onload=tab;
 function tab(){
-window.onmousewheel = document.onmousewheel =  scrollFunc;  
+var s= window.navigator.appVersion;
+if (s==="5.0 (Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; InfoPath.3; rv:11.0) like Gecko") {
+}else {
+  window.onmousewheel = document.onmousewheel =  scrollFunc;  
+}
 }
 
 
