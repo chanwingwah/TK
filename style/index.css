@@ -18,6 +18,7 @@ width: 100%;
 .content-1{
 	background:no-repeat url("../pic/TKmain2.jpg") #131313;
 	background-size: 100% 100%; 
+    overflow: hidden;
 
 }
 
@@ -25,7 +26,6 @@ width: 100%;
 /*内容块*/
 .content-2 *{text-align: center;color: #bbbbbb;line-height: 1.6em;}
 .content-2{background-color:#FFF}
-
 .font46{font-size: 46px;color: #858484;}
 .font23{font-size: 23px;}
 
@@ -51,11 +51,6 @@ box-shadow:inset 0px 2px 2.5em rgba(255,0,0,0.3),0px 0px 1px #000;
 
 .achievement>div>ul>li:hover>i{
     color:#000;
- /*   text-shadow: 0 0 5px #fff,
-                 0 0 10px #fff,
-                 0 0 15px #fff,
-                 0 0 20px #000;*/
-
   transition: transform 0.5s ease-in-out;
 }
 
@@ -65,6 +60,7 @@ box-shadow:inset 0px 2px 2.5em rgba(255,0,0,0.3),0px 0px 1px #000;
 }
 
 
+/*几个li的样式颜色*/
 i.color1{ color: #69c5e5; }
 i.color2{ color: #caa06e; }
 i.color3{ color: #bdbfc6; }
@@ -131,28 +127,42 @@ i.color4{ color: #3e466a; }
 }
 
 /*旋转放大*/
-/* @-moz-keyframes big{
+ @-moz-keyframes big{
         0%{
-          -moz-transform:rotate(0deg);
+          opacity: 0;
+          -moz-transform: rotate(0deg) scale(0);
          }
-         10%{
-           -moz-transform:rotate(360deg);
-         }         
-         100%{
-           -moz-transform:rotate(360deg);
-         }
+
+         70%{
+          opacity: 1;
+          -moz-transform: rotate(370deg) scale(1.2);
+        }
+
+        -moz-85%{
+          transform: rotate(-10deg); scale(1.1);
+        }
+        100%{
+          -moz-transform: rotate(0); scale(1);
+        }
       }
-      @-webkit-keyframes rotate{
+      @-webkit-keyframes big{
         0%{
-          -webkit-transform:rotate(0deg);
+          opacity: 0;
+          -webkit-transform: rotate(0deg) scale(0);
          }
-         10%{
-           -webkit-transform:rotate(360deg);
-         }         
-         100%{
-           -webkit-transform:rotate(360deg);
-         }
-      }*/
+
+         70%{
+          opacity: 1;
+          -webkit-transform: rotate(370deg) scale(1.2);
+        }
+
+        -webkit-85%{
+          transform: rotate(-10deg); scale(1.1);
+        }
+        100%{
+          -webkit-transform: rotate(0); scale(1);
+        }
+      }
       @keyframes big{
         0%{
           opacity: 0;
@@ -163,9 +173,7 @@ i.color4{ color: #3e466a; }
           opacity: 1;
           transform: rotate(370deg) scale(1.2);
         }
-   /*     80%{
-          transform: rotate(10deg); scale(1);
-        }*/
+
         85%{
           transform: rotate(-10deg); scale(1.1);
         }

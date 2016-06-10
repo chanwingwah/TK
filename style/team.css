@@ -88,7 +88,11 @@
 .member-cardi>div>span{font-size: 24px;margin-left: 10px;}
 .member-cardi>div>p{ font-size: 12px; white-space:nowrap; text-align: left;margin-left: 10px;margin-bottom: 5px;} 
 
-.join{ position: relative;  background-color: #E1DFB4;font-size: 18px;line-height: 2em;color: #636360;text-align: center; padding-bottom: 4em;font-size: 20px;  width:67.45em;}
+.join{ position: relative;  background-color: #E1DFB4;font-size: 18px;
+	line-height: 2em;color: #636360;text-align: center; padding-bottom: 4em;
+	font-size: 20px;  width:67.45em;
+	overflow: visible;
+}
 .join>img{position: absolute;bottom : 0;right: 150px;font-size: 25px;height: 19.2em;}
 .join>div{margin-right: 370px;padding-top: 3em;}
 .join>div>span{font-size: 30px;line-height: 5.5em;}
@@ -133,7 +137,6 @@
 /*运动的音符*/
 
 i.music1{
-
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -141,7 +144,6 @@ i.music1{
   animation-name: circle;
 }
 i.music2{
-
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -150,7 +152,6 @@ i.music2{
 }
 
 i.music3{
-
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;

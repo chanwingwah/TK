@@ -25,7 +25,7 @@ nav,section,footer{
 	position: relative;
     width:67.45em;
     position: relative;
-
+    overflow-x: hidden;
 	}
 
 
@@ -36,6 +36,7 @@ nav{
 	background-color: #1C1D1A;
 	padding: 0 10.1175em;
 	width: 47.215em;
+    overflow: hidden;
 	}
 	
 nav *{
