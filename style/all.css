@@ -79,7 +79,7 @@ nav>a>i.iconfont:hover{
     70%{ transform: translateX(150px); opacity: 1;}   
     
     100%{ transform: translateX(0px); opacity: 1;}        
-
+}
 
 /*定义一个名字为righteaseinAnimate动画，实现从页面的右边淡入页面效果*/
 @keyframes righteaseinAnimate{
