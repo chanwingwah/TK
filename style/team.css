@@ -1,10 +1,10 @@
 
 
-
+/*设置背景*/
 .bg{background-color: #FFFCD8;padding-bottom: 5.9em;width: 100%}
 .join_bg{width: 100%;background-color:#E1DFB4; }
 
-/*主要块*/
+/*内容块*/
 
 .teacher>img{font-size: 35px; float: left; margin-right: 70px;height: 15.286em;}
 .teacher>div{font-size: 12px;text-align: left;color: #a9a179;line-height: 2.5em;padding-top: 180px;}
@@ -112,9 +112,7 @@
 
 
 
-
 /*运动的音符*/
-
 
 .music>i{
 	position: absolute;
@@ -123,14 +121,12 @@
 	color: red;
 	font-size: 2em;
 	bottom: 2em;
-
-
 }
+
 .music>i:hover{
 	  animation-name: none;
 
 }
-
 
 
 i.music1{
@@ -165,6 +161,8 @@ i.music3{
   }
 }
 
+
+/*添加文字的闪闪发光*/
 
 @keyframes neon6 {
   from {

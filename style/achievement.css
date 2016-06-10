@@ -113,12 +113,6 @@ transform:  scale(1.5);
            transform:rotate(360deg);
         }
       }
-/*.shuju>div{
-            -moz-animationmove360rotate 20s infinite linear;
-            -webkit-animation:rotate 20s infinite linear;
-            animation:rotate 20s infinite linear;
-
-          }*/
 
 div.circle1{
   -webkit-animation: rotate 15s ease-in-out 1s infinite ;
@@ -138,8 +132,7 @@ div.circle3{
 
 
 .shuju>div:hover>span { 
-/*  transition: transform 2s linear;
-*/  -webkit-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
        -moz-transition: all 1s ease-in-out;
             transition: all 1s ease-in-out;
     transform:  scale(1.5);
@@ -180,8 +173,7 @@ div.circle3{
         opacity: 0;
         transform: translate(-1000px);
         
-/*        transform: scaleX(-1);
-*/        }
+       }
          100%{
         opacity: 1;
         transform: translate(0);
@@ -193,8 +185,7 @@ div.circle3{
         opacity: 0;
         transform: translate(1000px);
         
-/*        transform: scaleX(-1);
-*/        }
+       }
          100%{
         opacity: 1;
         transform: translate(0);
