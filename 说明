@@ -1,0 +1,31 @@
+链接：http://hua-cyh.github.io/TK/index.html
+文件查看链接：https://github.com/hua-cyh/TK.git
+
+
+布局：居中的地方大多使用text-alien：center;居中比较稳定；
+
+HTML5：用了一些HTML5的标签如nav、section、footer等；
+
+CSS3：多处使用css3动画，添加页面生机
+
+JavaScript：还没学得很会;，花时间比较多；主要写成果展示轮播、成员介绍轮播、鼠标滚动事件；轮播结合了css3；
+
+js有不小bug;
+成员介绍轮播bug：按钮点击会出现突然反移的bug;
+鼠标滚动事件bug：IE11上没有了效果而且导致鼠标会不灵活；只好ie11隐藏事件；
+	
+字体处理：利用word、excel对文字筛选 ，然后用有字库（在线字体生成）生成独立的字体链接，从而字体加载快，体积小。
+
+图标处理：发现了一个比font awesome 更好的iconfont工具 阿里iconfont，右上角TK图标就是用AI转换成图标，上传到阿里iconfont生成字体图标。把所有的图标生成一个几十k的图标字体文件；
+
+布局：为了避免chrome的缩小限制导致的糟糕结果，处理方法:
+body{ 	
+font-size: 20px;   
+ 	min-width: 67.45em;
+}
+
+在chrome上把宽度单位设为em，那么body的大小缩放就由font-size决定了；
+font-size最小的大小为12px; 所以宽度最小只能缩小 12/20= 0.6倍了；
+从而不会出现字体不能缩小了而容器还一直缩小；
+
+Github：还不会使用git ；就学会使用了建立和托管网页；
