@@ -11,11 +11,7 @@
 .teacher>div>span{font-size: 36px;line-height:  2em}
 
 
-.member-list{clear: both;padding-top: 4.25em;}
-
-
-
-.member-list {text-align: center;}
+.member-list{clear: both;padding-top: 4.5em;text-align: center;overflow: visible ; }
 .member-list *{text-align: center;color: #757575;line-height: 1.6em;}
 .member-list>p{
 	font-size: 46px;
@@ -23,9 +19,9 @@
 }
 
 
-/*组介绍*/
-.member-title{font-size: 18px;color:#757575;}
-.a-line{display: inline-block;height: 1px;background-color: #969696;width:9.6%; margin: auto 16px 5px 16px;}
+/*组员介绍*/
+.member-title{font-size: 18px;color:#757575; }
+.a-line{display: inline-block;height: 0.08em;background-color: #969696;width:9.6%; margin: auto 16px 5px 16px;}
 
 
 .btn:hover{
@@ -101,7 +97,7 @@
 	background-color: #7EB79F;
 	width: 9.167em;
 	height: 2.2em;
-	margin: 15px 0 90px;
+	margin: 15px 0 50px;
 	border-radius: 5px;
 	-webkit-box-shadow:0px 3px 2px #70A189;
 	-moz-box-shadow:0px 3px 2px #70A189;
@@ -113,6 +109,12 @@
 	color: #FFF;
 
 }
+
+
+
+
+/*运动的音符*/
+
 
 .music>i{
 	position: absolute;
@@ -131,23 +133,18 @@
 
 
 
-
-
-
-/*运动的音符*/
-
 i.music1{
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  transform-origin: -3em;
+  transform-origin: -2em;
   animation-name: circle;
 }
 i.music2{
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  transform-origin: -5em;
+  transform-origin: -4em;
   animation-name: circle;
 }
 
@@ -155,7 +152,7 @@ i.music3{
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  transform-origin: 4em;
+  transform-origin: 3em;
   animation-name: circle;
 }
 

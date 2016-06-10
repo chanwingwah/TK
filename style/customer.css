@@ -1,6 +1,6 @@
 html,body{height: 100%; margin: 0;padding: 0;}
-.bg{background: #E7EAEC;text-align: center; padding-bottom: 2.5em;color: #41484e; height: 95%;min-height: 38em;}
-.bg>img{margin-top:4.5em;margin-bottom: 2.5em; width: 73.57%;}
+.bg{background: #E7EAEC;text-align: center; padding-bottom: 2.2em;color: #41484e; height: 97.5%;min-height: 40em;}
+.bg>img{margin-top:2.5em;margin-bottom: 2em; width: 51.499em;}
 .bg *{line-height: 2em; }
 .bg>p{font-size: 12px;}
 .content {font-size:12px;width:23.334em;text-align: center; display: inline-block;margin-top: 1em;}
@@ -13,7 +13,7 @@ input,textarea{
   width: 92.8%;
   background:#41494E; 
   border: 0px;
-  border-radius:4px;
+  border-radius:0.4em;
   border-color:#41484e; 
   color:#FFF;
   padding: 0.416em 3.6%;
@@ -27,12 +27,12 @@ input{
 
 }
 textarea{
-  min-height: 10em;
+  min-height: 9.5em;
   resize:vertical;
   overflow-y: auto;
   scrollbar-face-color:#000;
   scrollbar-track-color:#41494E;
-    border-radius:8px;
+    border-radius:0.8em;
 
 
 }
@@ -60,6 +60,7 @@ textarea:active,
 input:not([type="submit"]):focus, 
 textarea:focus{
 background:#41484e;
+
 /*box-shadow*/
 -webkit-box-shadow:3px 3px 7px #000 inset;
    -moz-box-shadow:3px 3px 7px #000 inset;
@@ -79,6 +80,7 @@ background:#41484e;
   -webkit-animation: colors 100s linear 2s  alternate 10;
   -o-animation: colors 100s linear 2s  alternate 10;
   animation: colors 100s linear 2s  alternate 10;
+  overflow: visible;
 }
 
 
@@ -101,3 +103,13 @@ background:#41484e;
   box-shadow:  -2px 0px 20px rgba(255,0,0,1);
 
 }
+
+.content:hover{
+    margin: 5.3em;
+    transform: scale(1.3) translate(0,-50px);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+}
+

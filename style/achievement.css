@@ -35,19 +35,19 @@ div.circle3>span {font-size: 30px; }
 
 
 /*主要块*/
-.content-2{background-color:#FFF;padding-bottom: 6em;}
+.content-2{background-color:#FFF;padding-bottom: 10em;}
 .content-2 *{text-align: center;line-height: 1.6em;}
 
 
 
 /*组介绍*/
 .content-2>p{
-  padding-top: 1.7em;
+  padding-top: 1em;
 	font-size: 48px;
 	color:#00cc99;
 }
 .group-title{font-size: 24px;color:#757575;}
-.a-line{display: inline-block;height: 0.05em;background-color: #969696;width:15%; margin: auto 16px 5px 16px;}
+.a-line{display: inline-block;height: 0.08em;background-color: #969696;width:15%; margin: auto 16px 5px 16px;}
 
 
 
