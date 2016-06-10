@@ -25,7 +25,7 @@ width: 100%;
 
 /*内容块*/
 .content-2 *{text-align: center;color: #bbbbbb;line-height: 1.6em;}
-.content-2{background-color:#FFF}
+.content-2{background-color:#FFF;overfloat:visible;}
 .font46{font-size: 46px;color: #858484;}
 .font23{font-size: 23px;}
 
