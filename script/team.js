@@ -4,7 +4,6 @@ function $(id){
     return typeof id==='string'?document.getElementById(id):id;
 }
 
-
  var sum=0;
  var i=0;
  // 当add的为1，向左动
@@ -23,8 +22,6 @@ resetvalue=0;
 ivalue=0;
 b=-1;
 
-
-
  var time;
  var speed=600; 
  var intervalTime = 1200;
@@ -34,7 +31,14 @@ b=-1;
 
 
 
+var nav=document.getElementsByClassName("nav_bg")[0];
+var section=document.getElementsByTagName("section");
+var movespeed=100;
+var  time3;
+
+
  window.onload=function () {
+	window.onmousewheel = document.onmousewheel =  scrollFunc;  
  	time=setInterval("scroll()",intervalTime);
 
 	bnr.onclick=function () {
@@ -119,6 +123,106 @@ function fuyuan() {
 	}, speed);
 
 	}
+
+
+
+
+
+
+
+   var scrollFunc = function (e) {
+        e = e || window.event;
+        if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件 
+
+              if (e.wheelDelta > 0) { //当滑轮向上滚动时
+                  if (window.scrollY>=(section[1].offsetTop+movespeed)) { 
+                  window.onmousewheel = document.onmousewheel = null;  
+                  time3=setInterval(function () {
+                          var a=window.scrollY;
+                          GoGo(-movespeed);
+                          if (window.scrollY<=(section[1].offsetTop+movespeed)||(a==window.scrollY)) {
+                            clearInterval(time3);
+                            window.onmousewheel = document.onmousewheel = scrollFunc;  
+                          }
+                    }, 1);
+                    }else {
+                      window.onmousewheel = document.onmousewheel = null;  
+                          time3=setInterval(function () {
+                          var a=window.scrollY;
+                          GoGo(-movespeed);
+                          if (window.scrollY<=nav.offsetTop||(a==window.scrollY)) {
+                            clearInterval(time3);
+                            window.onmousewheel = document.onmousewheel = scrollFunc;  
+                          }
+                    }, 1);  
+                    } 
+
+              }else { //当滑轮向下滚动时
+                  if (window.scrollY<section[1].offsetTop) {
+                      window.onmousewheel = document.onmousewheel = null;    
+                      time3=setInterval(function () {
+                                var a=window.scrollY;
+                                GoGo(movespeed);
+                                if ( (window.scrollY>=section[1].offsetTop) ||(a==window.scrollY) ) {
+                                    clearInterval(time3);
+                                    window.onmousewheel = document.onmousewheel = scrollFunc;  
+                                    i++;
+                                }
+                        }, 1);
+
+                    }else if(window.scrollY<section[2].offsetTop){
+                     window.onmousewheel = document.onmousewheel = null;  
+                      time3=setInterval(function () {
+                                var a=window.scrollY;
+                                GoGo(movespeed);
+                                if ( (window.scrollY>=section[2].offsetTop-120) ||(a==window.scrollY)) {
+                                    clearInterval(time3);
+                                    window.onmousewheel = document.onmousewheel = scrollFunc;  
+                                    i++;
+                                }
+                        }, 1);
+
+                    }
+              }
+        }
+
+    }
+
+function GoGo (yy) {
+      window.scrollBy(0, yy);//yy即为滚动速度
+}
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
