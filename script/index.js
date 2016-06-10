@@ -7,12 +7,13 @@ var  time3;
 
 window.onload=tab;
 function tab(){
-
 window.onmousewheel = document.onmousewheel =  scrollFunc;  
 }
 
 
    var scrollFunc = function (e) {
+        time3=null;
+        clearInterval(time3);
         e = e || window.event;
         if (e.wheelDelta) {  //判断浏览器IE，谷歌滑轮事件 
 
