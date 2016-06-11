@@ -35,7 +35,7 @@ div.circle3>span {font-size: 30px; }
 
 
 /*主要块*/
-.content-2{background-color:#FFF;padding-bottom: 10em;}
+.content-2{background-color:#FFF;padding-bottom: 10em; overflow=visible;}
 .content-2 *{text-align: center;line-height: 1.6em;}
 
 
