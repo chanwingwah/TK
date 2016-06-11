@@ -25,7 +25,7 @@ width: 100%;
 
 /*内容块*/
 .content-2 *{text-align: center;color: #bbbbbb;line-height: 1.6em;
-	    overflow: hidden;
+	    overflow: visible;
 
 }
 .content-2{background-color:#FFF;overflow: visible; 
